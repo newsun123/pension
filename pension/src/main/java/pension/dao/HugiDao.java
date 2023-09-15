@@ -36,7 +36,6 @@ public class HugiDao {
 		int size = 1024*1024*100;
 		String path = request.getRealPath("/hugi/img");
 		
-		
 		MultipartRequest multi = new MultipartRequest(request, path, size, "utf-8", new DefaultFileRenamePolicy());
 		
 		String title = multi.getParameter("title");
